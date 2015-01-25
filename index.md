@@ -35,7 +35,7 @@ knit        : slidify::knit2slides
 
 ## Sample R code
 
-1. Let's consider two people with the following birthdates
+1. Let's consider two people with the following birthdates:
 
 ```r
 older <- as.Date("1960-06-01")
