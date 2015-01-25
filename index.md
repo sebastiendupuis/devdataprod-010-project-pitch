@@ -1,0 +1,61 @@
+---
+title       : Simple Date Calculator
+subtitle    : for devdataprod-010 course project
+author      : 
+job         : 
+framework   : dzslides        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+
+## Agenda
+
+1.  Purpose
+2.  How to use the application
+3.  Sample R code
+
+--- .class #id 
+
+## Purpose
+
+1.  This is a very simple Shiny application that calculates the date when a person's age will be double another person's age 
+
+--- .class #id 
+
+## How to use
+
+1.  Simply input the birthdates of two people you know
+
+
+--- .class #id 
+
+## Sample R code
+
+1. Let's consider two people with the following birthdates
+
+```r
+older <- as.Date("1960-06-01")
+younger <- as.Date("1980-01-01")
+```
+2. Then the date we are looking for is computed as follows:
+
+```r
+older + 2 * (younger - older)
+```
+
+```
+## [1] "1999-08-02"
+```
+
+
+--- .class #id 
+
+## Thank you!
+
+
+
+
